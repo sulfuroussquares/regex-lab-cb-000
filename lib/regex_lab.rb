@@ -15,8 +15,8 @@ return splitArray.grep(/\b\w{5}\b/).flatten
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  textArr = text.split(" ")
-  return textArr.grep(/\A[A-Z].+[?.,!]$/).empty? ? false : true
+  splutArray = text.split(" ")
+  return splitArray.grep(/\A[A-Z].+[?.,!]$/).empty? ? false : true
 end
 
 def valid_phone_number?(phone)
