@@ -16,7 +16,7 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   splitArray = text.split(" ")
-  return splitArray.grep(/\b[A-Z]\w+\b./).empty? ? false : true
+  return splitArray.grep(\b[A-Z]\w+[.,]).empty? ? false : true
 
 end
 
